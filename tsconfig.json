@@ -2,7 +2,9 @@
     "compilerOptions": {
         "target": "esnext",
         "module": "commonjs",
-        "lib": ["es2017"],
+        "lib": [
+            "es2017"
+        ],
         "allowJs": true,
         "jsx": "react-native",
         "noEmit": true,
@@ -12,7 +14,31 @@
         "allowSyntheticDefaultImports": true,
         "esModuleInterop": true,
         "skipLibCheck": false,
-        "resolveJsonModule": true
+        "baseUrl": ".",
+        "resolveJsonModule": true,
+        "paths": {
+            "*": [
+                "src/*"
+            ],
+            "assets/*": [
+                "src/assets/*"
+            ],
+            "components": [
+                "src/components/*"
+            ],
+            "config": [
+                "src/config/*"
+            ],
+            "navigation": [
+                "src/navigation/*"
+            ],
+            "utilities": [
+                "src/utilities/*"
+            ],
+            "views": [
+                "src/views/*"
+            ]
+        }
     },
     "exclude": [
         "node_modules",
