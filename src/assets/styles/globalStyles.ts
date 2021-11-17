@@ -9,9 +9,10 @@ export const scale = (size: number) => (width / guidelineWidth) * size;
 export const scaleVertical = (size: number) => (height / guidelineBaseHeight) * size;
 
 const styles = StyleSheet.create({
-  flex: {
+  container: {
     flex: 1,
-  }
+    backgroundColor: 'white',
+  },
 });
 
 export default styles;
