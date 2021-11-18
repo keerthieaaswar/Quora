@@ -8,6 +8,7 @@ import {
 } from 'react-native';
 
 import styles from 'assets/styles/globalStyles';
+import Header from 'components/Header';
 
 const RobotoBold = require('assets/fonts/Roboto-Bold.ttf');
 const RobotoRegular = require('assets/fonts/Roboto-Regular.ttf');
@@ -41,9 +42,9 @@ const App = () => {
 
   return (
     <SafeAreaView style={styles.container}>
-      <StatusBar barStyle='light-content' animated={true} />
+      <StatusBar barStyle='dark-content' animated={true} backgroundColor='#f7f6f8' />
       <View>
-        <Text>Sample</Text>
+        <Header />
       </View>
     </SafeAreaView>
   );
